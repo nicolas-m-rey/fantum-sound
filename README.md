@@ -3,22 +3,22 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+To do list for Music Uploading Application
 
-* Ruby version
+* Set up devise for Users
 
-* System dependencies
+* Set up Shrine and ActiveStorage for Image Uploads
 
-* Configuration
+* Set up CarrierWave for Audio File Uploads
 
-* Database creation
+* Database creations/initialization
 
-* Database initialization
+* Connect everything in MVC
 
-* How to run the test suite
+* Test to make sure a user can upload a sound file as well as image and description
 
-* Services (job queues, cache servers, search engines, etc.)
+* Create User page, Home page, and Show page for Songs
 
-* Deployment instructions
+* Set up likes and comments in Show for Songs
 
 * ...
