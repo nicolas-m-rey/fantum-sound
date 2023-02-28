@@ -5,7 +5,7 @@ application up and running.
 
 To do list for Music Uploading Application
 
-* Set up devise for Users --> This is in progress
+* Set up devise for Users
 
 * Set up Shrine and ActiveStorage for Image Uploads
 
