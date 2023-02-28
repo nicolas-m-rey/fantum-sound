@@ -11,9 +11,9 @@ To do list for Music Uploading Application
 
 * Set up CarrierWave for Audio File Uploads
 
-* Database creations/initialization
+* Database creations/initialization (postgres?) -- look into pg gem
 
-* Connect everything in MVC
+* Connect gems in MVC
 
 * Test to make sure a user can upload a sound file as well as image and description
 
@@ -22,3 +22,5 @@ To do list for Music Uploading Application
 * Set up likes and comments in Show for Songs
 
 * ...
+
+* deploy
