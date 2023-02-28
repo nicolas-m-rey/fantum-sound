@@ -75,5 +75,3 @@ group :test do
 end
 
 gem "shrine", "~> 3.4"
-
-gem 'carrierwave', '>= 3.0.0.beta', '< 4.0'
