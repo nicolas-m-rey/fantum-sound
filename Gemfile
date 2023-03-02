@@ -75,3 +75,5 @@ group :test do
 end
 
 gem 'carrierwave', '>= 3.0.0.beta', '< 4.0'
+
+gem 'pg', '~> 1.4', '>= 1.4.6'

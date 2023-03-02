@@ -5,13 +5,11 @@ application up and running.
 
 To do list for Music Uploading Application
 
-* Set up devise for Users --> This is in progress
+* Set up devise for Users --> This is done
 
-* Set up Shrine and ActiveStorage for Image Uploads
+* Set up CarrierWave for image/audio uploads --> This is in progress
 
-* Set up CarrierWave for Audio File Uploads
-
-* Database creations/initialization
+* Database creations/initialization -- postgres
 
 * Connect everything in MVC
 
@@ -22,3 +20,6 @@ To do list for Music Uploading Application
 * Set up likes and comments in Show for Songs
 
 * ...
+
+Go online, search PG gem (ruby), download postgres onto computer, etc.
+Hook up PG gem, configure usernames
