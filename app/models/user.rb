@@ -5,4 +5,16 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :confirmable
 
   mount_uploader :avatar, AvatarUploader
+
+  has_one_attached :avatar
+
+  has_many :tracks,
+    foreign_key: :uploader_id,
+    class_name: :Track 
+
+  has_many :likes,
+    foreign_key: :liker_id,
+    class_name: :Like 
+
+  
 end
