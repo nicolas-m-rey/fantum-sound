@@ -3,5 +3,6 @@ class UsersController < ApplicationController
     def index
         @current_user = current_user.:id
         @user_object = User.where(id: @current_user)
+        
     end
 end
