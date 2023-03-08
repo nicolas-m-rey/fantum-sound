@@ -7,6 +7,7 @@ class User < ApplicationRecord
   mount_uploader :avatar, AvatarUploader
 
   has_one_attached :avatar
+  has_one :account
 
   has_many :tracks,
     foreign_key: :uploader_id,
@@ -16,5 +17,5 @@ class User < ApplicationRecord
     foreign_key: :liker_id,
     class_name: :Like 
 
-  
+  accepts_nested_attributes_for :account
 end
