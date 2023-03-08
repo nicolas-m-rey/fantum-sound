@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class AccountsController < ApplicationController
     before_action :authenticate_user!
     def show
         @current_user = current_user.:id
