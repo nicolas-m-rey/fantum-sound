@@ -1,13 +1,12 @@
 class TracksController < ApplicationController
 
-    def show 
+    def index
         @current_track = Track.find(params[:id])
         @tracks = Track.all
     end
 
     def create 
-        @track =
-            Track.new(track_params)
+        @track = Track.new(track_params)
 
     end
 
@@ -19,7 +18,7 @@ class TracksController < ApplicationController
     private 
 
     def track_params
-        params.require(:track).permit(:name)
+        params.require(:track).permit(:name, :audio, :image)
     end
 
 end

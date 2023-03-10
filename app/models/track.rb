@@ -3,8 +3,8 @@ class Track < ApplicationRecord
 
     validates :title, :uploader_id, presence: true
 
-    has_one_attached :audio
-    has_one_attached :image 
+    has_one_attached :audio, dependent: :destroy
+    has_one_attached :image, dependent: :destroy
 
     belongs_to :uploader,
     foreign_key: :uploader_id
