@@ -1,21 +1,21 @@
 class Track < ApplicationRecord
-    after_initialize :ensure_play_count
+ #   after_initialize :ensure_play_count
 
-    validates :title, :uploader_id, presence: true
+  #  validates :title, :uploader_id, presence: true
 
     has_one_attached :audio, dependent: :destroy
     has_one_attached :image, dependent: :destroy
 
-    belongs_to :uploader,
-    foreign_key: :uploader_id
-    class_name: :User
+  #  belongs_to :uploader,
+   # foreign_key: :uploader_id
+    # class_name: :User
 
-    has_many :comments,
-    foreign_key: :track_id
-    class_name: :Comment 
+   # has_many :comments,
+   # foreign_key: :track_id
+    # class_name: :Comment 
 
-    has_many :likes 
-    foreign_key: :track_id 
-    class_name: :Like
+  #  has_many :likes 
+   # foreign_key: :track_id 
+    # class_name: :Like
     
 end

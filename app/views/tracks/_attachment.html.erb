@@ -1,0 +1,13 @@
+<% if track.file.attached? %>
+
+    <div>
+        <% if track.file.image? %>
+            <% image_tag(track.file) %>
+
+            <% elsif track.file.audio? %>
+
+            <%= audio_tag(url_for(track.file))%>
+        <% end %>
+    </div>
+
+<% end %>
